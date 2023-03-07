@@ -1,0 +1,16 @@
+<div style="margin-top: 85px" role="main">
+  <div class="row">
+    <div class="column" *ngFor="let theatre of theatres, let i=index">
+      <div class="card" style="height: 530px;margin-bottom: 20px;">
+        <img [src]="theatre.thumbnail_url" alt="Alps" style="height: 350px">
+        <p>{{theatre.theatre_name}}</p>
+        <p></p>
+        <p>{{theatre.address}}</p>
+        <button (click)="navigateToTheatres(theatre)">Movies</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+

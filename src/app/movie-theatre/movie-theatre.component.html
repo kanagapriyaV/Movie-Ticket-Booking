@@ -1,0 +1,91 @@
+<div style="margin-top: 85px" role="main">
+  <div class="venue-info-wrappper">
+    <div class="wrapper">
+      <h1>{{theatre.theatre_name}}</h1>
+      <h5>{{theatre.address}}</h5>
+    </div>
+  </div>
+  <div class="container">
+      <ul>
+        <li class="list">
+          <div class="listing-info">
+            <div class="details">
+              <span class="name">{{theatre.show1_movie}}</span>
+              <br>
+            </div>
+            <div class="eventInfo">
+              {{show1_movie_details.language}} | {{show1_movie_details.tags}}
+              <br>
+              Rating: {{show1_movie_details.imdb_rating}}
+            </div>
+          </div>
+          <div class="showtimes-body">
+            <div class="showtime-pill-container">
+              <a  (click)="navigateToBookSeats(theatre.show1_movie)" target="new" class="showtime-pill">{{theatre.show1_time}}</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list">
+          <div class="listing-info">
+            <div class="details">
+              <span class="name">{{theatre.show2_movie}}</span>
+              <br>
+            </div>
+            <div class="eventInfo">
+              {{show2_movie_details.language}} | {{show2_movie_details.tags}}
+              <br>
+              Rating: {{show2_movie_details.imdb_rating}}
+            </div>
+          </div>
+          <div class="showtimes-body">
+            <div class="showtime-pill-container">
+              <a href="" class="showtime-pill">{{theatre.show2_time}}</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list">
+          <div class="listing-info">
+            <div class="details">
+              <span class="name">{{theatre.show3_movie}}</span>
+              <br>
+            </div>
+            <div class="eventInfo">
+              {{show3_movie_details.language}} | {{show3_movie_details.tags}}
+              <br>
+              Rating: {{show3_movie_details.imdb_rating}}
+            </div>
+          </div>
+          <div class="showtimes-body">
+            <div class="showtime-pill-container">
+              <a href="" class="showtime-pill">{{theatre.show3_time}}</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list">
+          <div class="listing-info">
+            <div class="details">
+              <span class="name">{{theatre.show4_movie}}</span>
+              <br>
+            </div>
+            <div class="eventInfo">
+              {{show4_movie_details.language}} | {{show4_movie_details.tags}}
+              <br>
+              Rating: {{show4_movie_details.imdb_rating}}
+            </div>
+          </div>
+          <div class="showtimes-body">
+            <div class="showtime-pill-container">
+              <a href="" class="showtime-pill">{{theatre.show4_time}}</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+  </div>
+</div>
+
